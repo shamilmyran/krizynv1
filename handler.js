@@ -569,8 +569,8 @@ Untuk mematikan fitur ini, ketik
 global.dfail = (type, m, conn) => {
 	let name = conn.getName(m.sender)
   let msg = {
-    rowner: '⚠️Emangnya lu *OWNER* tod!',
-    owner: '⚠️Emangnya lu *OWNER BOT* tod!',
+    rowner: '⚠️Are you *OWNER* tod!',
+    owner: '⚠️Are you * OWNER BOTT* tod!',
     mods: '⚠️Emangnya lu *Moderator* tod!',
     premium: '⚠️Emangnya lu member *PREMIUM* tod!',
     group: '⚠️*Emangnya ini di *GRUP* Tod!*',

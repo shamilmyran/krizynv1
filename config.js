@@ -67,8 +67,8 @@ namakontak2 = '𝒎𝒖𝒏𝒂𝒗𝒊𝒓×͜×'
 //kasihcaption = `Kalau udah dikasih, bilang apa?`
 
 // Sticker WM
-global.packname = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×' // ganti aja
-global.author = 'ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×' // ganti aja
+global.packname = 'ᴹᴿ𝒎𝒖𝒏𝒂𝒗𝒊𝒓 ×፝֟͜×' // ganti aja
+global.author = 'ᴹᴿ𝒎𝒖𝒏𝒂𝒗𝒊𝒓 ×፝֟͜×' // ganti aja
 
 //yyy
 'ᴹᴿ𝒎𝒖𝒏𝒂𝒗𝒊𝒓×͜×' // Broadcast

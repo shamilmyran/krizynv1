@@ -573,11 +573,11 @@ global.dfail = (type, m, conn) => {
     owner: '⚠️Are you * OWNER BOTT* tod!',
     mods: '⚠️Emangnya lu *Moderator* tod!',
     premium: '⚠️Emangnya lu member *PREMIUM* tod!',
-    group: '⚠️*Emangnya ini di *GRUP* Tod!*',
-    private: '*Di pc aja yuk sayang!*',
+    group: '⚠️*Is this in *GROUP* Tod!*',
+    private: '*Let's just go on the PC, honey!*',
     admin: '⚠️Emangnya lu *ADMIN* grup ya tod!',
     nsfw: 'cuma bisa diaktifkan sama dia @${global.kontak[0].split`@`[0]}',
-    botAdmin: '⚠️*Naikin dulu dong BOT nya,*\n*Masa iya bot di ewe gak di naikin pangkatnya*!🤪',
+    botAdmin: '⚠️*Please raise the BOT first, *\n* Is it okay for your bot to not be promoted*!🤪',
    unreg: `Daftar Dulu dek biar bisa pakai fitur lain nya\n\ncaranya ketik:\n*#daftar nama.umur*\n\nContoh: #daftar ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×.22`
   }[type]
   if (msg) return m.reply(msg)

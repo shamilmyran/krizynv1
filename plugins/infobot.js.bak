@@ -5,7 +5,7 @@ let path = require('path')
 let moment = require('moment-timezone')
 let fetch = require('node-fetch')
 let handler = async(m, { conn }) => {
-  await m.reply(⏳𝙎𝘼𝘽𝘼𝙍 𝘿𝙄 𝙀𝙒𝙀 𝘿𝙐𝙇𝙐...)
+  await m.reply(⏳𝒘𝒂𝒊𝒕 𝒂 𝒔𝒆𝒄𝒐𝒏𝒅...)
     let kontol = `
 
 ╭─❒ 〘 𝗕 𝗢 𝗧   𝗜 𝗡 𝗙 𝗢 〙 
@@ -31,7 +31,7 @@ let handler = async(m, { conn }) => {
 ╰❒
 `.trim()
   const button = {
-        buttonText: 'Klik Disini',
+        buttonText: 'Select',
         description: kontol,
         sections:  [{title: "Silahkan di pilih gausah pilih yang gaada", rows: [
         {title: 'Menu Utama', description: "Kembali ke Menu Utama", rowId:".?"},

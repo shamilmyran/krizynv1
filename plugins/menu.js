@@ -8,24 +8,24 @@ const defaultMenu = {
   before: `
 ╭───◪ 〔 ${namabot} 〕 
 ⬡ ${ucapan()}
-⬡ Hello bro👋
+⬡ 𝐇𝐞𝐥𝐥𝐨 𝐛𝐫𝐨👋
 ╰────────⬣
 ╭───◪ 〔  𝙇 𝙄 𝙈 𝙄 𝙏  〕
-┃⬡ Tersisa *%limit Limit*
-┃⬡ Role *%role*
-┃⬡ Level *%level (%exp / %maxexp)* 
+┃⬡ 𝐥𝐞𝐟𝐭 *%limit Limit*
+┃⬡ 𝐑𝐨𝐥𝐞 *%role*
+┃⬡ 𝐋𝐞𝐯𝐞𝐥 *%level (%exp / %maxexp)* 
 ┃⬡ [%xp4levelup]
 ┃⬡ %totalexp XP secara Total
 ╰────────⬣
 ╭───◪ 〔 𝙏𝙄𝙈𝙀 𝘼𝙉𝘿 𝘿𝘼𝙏𝙀 〕
-┃⬡ Hari : *%week %weton* 
-┃⬡ Tanggal : *%date*
-┃⬡ Tanggal Islam : *%dateIslamic*
-┃⬡ Waktu: *%time*
+┃⬡ 𝐃𝐚𝐲 : *%week %weton* 
+┃⬡ 𝐃𝐚𝐭𝐞 : ${tanggal}
+┃⬡ 𝐈𝐬𝐥𝐚𝐦𝐢𝐜 𝐝𝐚𝐭𝐞 : *%dateIslamic*
+┃⬡ 𝐓𝐢𝐦𝐞: ${time}
 ╰────────⬣
 ╭───◪ 〔  𝘿𝘼𝙏𝘼𝘽𝘼𝙎𝙀  〕
-┃⬡ Uptime: *%uptime (%muptime)*
-┃⬡ Database: %rtotalreg dari %totalreg 
+┃⬡ 𝐔𝐩𝐭𝐢𝐦𝐞: *%uptime (%muptime)*
+┃⬡ 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞: %rtotalreg dari %totalreg 
 ╰────────⬣
 
 ────֍ 〔 𝗙𝗜𝗧𝗨𝗥 𝗕𝗢𝗧 〕 ֍────
@@ -51,14 +51,14 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let arrayMenu = ['all', 'game', 'edukasi', 'news', 'nsfw', 'xp', 'stiker', 'image', 'anime', 'kerangajaib', 'quotes', 'admin', 'rpg', 'grup', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database', 'quran', 'audio', 'jadibot', 'info', 'vote', 'tanpakategori', 'owner']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
-    'main': '𝙐𝙏𝘼𝙈𝘼',
+    'main': '𝙈𝘼𝙄𝙉',
     'game': '𝙂𝘼𝙈𝙀',
     'xp': '𝙀𝙓𝙋 & 𝙇𝙄𝙈𝙄𝙏',
     'nsfw': `𝙉𝙎𝙁𝙒 ${global.opts['nsfw'] ? '' : '(Dinonaktifkan)'}`,
     'sticker': '𝙎𝙏𝙄𝙆𝙀𝙍',
-    'edukasi': '𝙀𝘿𝙄𝙆𝙐𝙎𝙄',
+    'edukasi': '𝙀𝘿𝙐𝘾𝘼𝙏𝙄𝙊𝙉',
     'news': '𝙉𝙀𝙒𝙎',
-    'kerang': '𝙆𝙀𝙍𝘼𝙉𝙂 𝘼𝙅𝘼𝙄𝘽',
+    'kerang': '𝙎𝙃𝙀𝙇𝙇',
     'quotes': '𝙌𝙐𝙊𝙏𝙀𝙎',
     'admin': `𝘼𝘿𝙈𝙄𝙉 ${global.opts['restrict'] ? '' : '(Dinonaktifkan)'}`,
     'rpg': '𝙀𝙋𝙄𝘾 𝙍𝙋𝙂',
@@ -230,29 +230,29 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 Hello bro👋, ${name}`.trim(),
           "description": `
 ┏━━〔 𝙎 𝙏 𝘼 𝙏 𝙐 𝙎 〕━֍
-┃⬣ Aktif selama *${uptime}*
-┃⬣ Battary *${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*
-┃⬣ *${Object.keys(global.db.data.users).length}* Pengguna
-┃⬣ *${totaljadibot.length}* Jadibot
-┃⬣ *${conn.blocklist.length}* Terblock
-┃⬣ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
-┃⬣ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+┃⬣ 𝐀𝐜𝐭𝐢𝐯𝐞 𝐝𝐮𝐫𝐢𝐧𝐠 *${uptime}*
+┃⬣ 𝘽𝙖𝙩𝙩𝙖𝙧𝙮 *${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*
+┃⬣ 𝙍𝙪𝙣𝙩𝙞𝙢𝙚 0.0023 second
+┃⬣ 𝙃𝙤𝙨𝙩 𝙣𝙖𝙢𝙚 undefined
+┃⬣ 𝙈𝙤𝙙𝙚 PUBLIC
+┃⬣ 𝘽𝙤𝙩 𝙣𝙖𝙢𝙚 ${namabot}
+┃⬣ 𝙊𝙬𝙣𝙚𝙧 MUNAVIR
 ┗━━━━━━━━━━━━━━֍
 ┏━━〔 𝘼𝘾𝘾𝙊𝙐𝙉𝙏 𝙊𝙒𝙉𝙀𝙍 〕━֍
-┃⬣ IG : instagram.com/_munavir._
-┃⬣ NO : http://wa.me/918590822912
-┃⬣ TT : tiktok.com/
+┃⬣ 𝙄𝙂 : instagram.com/_munavir._
+┃⬣ 𝙉𝙤 : http://wa.me/918590822912
+┃⬣ 𝙏𝙏 : tiktok.com/
 ┃   
 ┃⬣ 𝘿𝙊𝙉'𝙏 𝙁𝙊𝙍𝙂𝙀𝙏 𝙏𝙊 𝙁𝙊𝙇𝙇𝙊𝙒𝙄𝙉𝙂!
 ┗━━━━━━━━━━━━━━֍`.trim(),
                         "footerText":"if you find a bug in usage\please report or ask owner",
-                        "buttonText": "Click here",
+                        "buttonText": "𝘾𝙡𝙞𝙘𝙠 𝙝𝙚𝙧𝙚",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
                                 
                                 "rows": [{
-                                    "title": `[ ☇ ] ꜱ ᴇ ᴍ ᴜ ᴀ  ᴘ ᴇ ʀ ɪ ɴ ᴛ ᴀ ʜༀ`,
+                                    "title": `[ ☇ ] ꜱ ᴇ ᴍ ᴜ ᴀ  ᴘ ᴇ ʀ ɪ ɴ ᴛ ᴀ ʜ`,
 									"description": "✓ 𝙈𝙚𝙢𝙗𝙚𝙧𝙞𝙠𝙖𝙣 𝙎𝙚𝙢𝙪𝙖 𝙁𝙞𝙩𝙪𝙧 𝘽𝙤𝙩ᴹᴿ𝙄𝙩𝙨𝙠𝙧𝙞 ×፝֟͜×",
 									"rowId": ".? all"
 								}, {
@@ -515,18 +515,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "*Dinihari Ngab*👻"
+  res = "*Early morning*👻"
   if (time >= 4) {
-    res = "*Pagi Ngab*🌤"
+    res = "*Good Morning*🌤"
   }
   if (time > 10) {
-    res = "*Siang Ngab*🌞"
+    res = "*Afternoon*🌞"
   }
   if (time >= 15) {
-    res = "*Sore Ngab*🌝"
+    res = "*Afternoon*🌝"
   }
   if (time >= 18) {
-    res = "*Malam Ngab*🌚"
+    res = "*Night*🌚"
   }
   return res
 }
